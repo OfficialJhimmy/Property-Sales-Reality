@@ -1,13 +1,270 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* FONTS */
+@font-face {
+  font-family: "Gallient";
+  src: url(./assets/Fonts/Gallient/Gallient.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "aeonikregular";
+  src: url("./assets/Fonts/aeonik/aeonik-regular-webfont.woff2") format("woff2"),
+    url("./assets/Fonts/aeonik/aeonik-regular-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aeoniklight";
+  src: url("./assets/Fonts/aeonik-light/aeonik-light-webfont.woff2")
+      format("woff2"),
+    url("./assets/Fonts/aeonik-light/aeonik-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: "Gallient";
+  --ff-paragraph: "Faktum";
+  --white: #fbfbfb;
+  --background: #e9dbd4;
+  --background-2: #e5e3db;
+  --background-black: #181618;
+  --blue: #33c2ff;
+  --deep-blue: #132542;
+  --lavender-secondary: #6b6d9e;
+  --dark-primary: #161950;
+
+  --green: rgb(4, 63, 70);
+  --dark-green: rgb(26, 55, 58);
+  --gray: rgb(136, 136, 136);
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #42454b;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 6px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* GENERAL STYLES*/
+
+body {
+  overflow-x: hidden;
+  text-decoration: none;
+  background-color: var(--background-2);
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "aeonikregular", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+section {
+  padding: 100px 80px;
+}
+
+p,
+span,
+button,
+a {
+  color: #363636;
+  font-family: "aeonikregular", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+button {
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: "aeonikregular", Arial, Helvetica, sans-serif;
+}
+
+.heading-primary {
+  font-size: 24px;
+  margin-bottom: 11px;
+  color: var(--deep-blue);
+}
+
+.heading-secondary {
+  color: var(--deep-blue);
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+
+.property__card--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+/* Leaflet Styling */
+.leaflet-container {
+  width: 75vw;
+  height: 75vh;
+  z-index: 10;
+}
+
+.wrapper {
+  padding: 50px 120px;
+}
+
+/* Pagination Styling */
+.pagination__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.buttons-fetch {
+  margin-left: 30px;
+}
+
+.btn-pagination {
+  background-color: #00b4d8;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 13.7px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  transition: all 0.5s;
+  outline: none;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.btn-pagination:hover {
+  background: #2c7da0;
+}
+
+@media screen and (max-width: 680px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  .wrapper {
+    padding: 10px 20px;
+  }
+
+  p {
+    line-height: 22px;
+    font-size: 13px;
+  }
+
+  .heading-primary {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .heading-secondary {
+    margin: 14px 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
+  .heading-primary {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+
+  .heading-secondary {
+    font-weight: 600;
+    margin: 14px 0;
+    font-size: 17px;
+  }
 }

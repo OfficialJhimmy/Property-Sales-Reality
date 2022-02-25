@@ -1,0 +1,66 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.testimonial__container {
+  margin: 140px 50px 80px 50px;
+}
+
+.testimonial__container h2 {
+  margin-bottom: 30px;
+}
+
+.testimonial__wrapper {
+  padding: 20px 30px;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  display: flex;
+  border-radius: 9px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.avatar__image {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+}
+
+.testimonial__heading {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.testimonial__data {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 680px) {
+  .testimonial__container {
+    margin: 70px 10px 50px 10px;
+  }
+
+  .testimonial__wrapper {
+    padding: 20px 20px;
+    display: flex;
+  }
+
+  .testimonial__heading {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .testimonial__data {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .testimonial__container {
+    margin: 100px 20px 80px 20px;
+  }
+}

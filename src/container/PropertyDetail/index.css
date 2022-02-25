@@ -1,0 +1,138 @@
+.propertydetails__section {
+  margin-top: 90px;
+}
+
+.propertydetails__top,
+.details__icons,
+.details__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.propertydetails__bottom,
+.property__disclaimer {
+  margin-top: 40px;
+}
+
+.details__img img {
+  width: 94%;
+}
+
+.details__icons--box {
+  display: flex;
+  align-items: center;
+}
+
+.property__id {
+  font-size: 10px;
+}
+
+.details__title {
+  margin-bottom: 20px;
+}
+
+.details__title--id {
+  margin-right: 10px;
+}
+
+.details__svg {
+  width: 23px;
+  height: 23px;
+  margin: 0 7px;
+}
+
+.details__icons {
+  margin-top: 20px;
+}
+
+.property__disclaimer {
+  border-radius: 6px;
+  background-color: var(--white);
+  padding: 60px 80px;
+  color: var(--background-black);
+}
+
+.property__disclaimer h2 {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.property__map {
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 680px) {
+  .propertydetails__top,
+  .details__title {
+    display: block;
+  }
+
+  .propertydetails__bottom,
+  .property__disclaimer {
+    margin-top: 30px;
+  }
+
+  .details__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .details__img img {
+    width: 90%;
+  }
+
+  .property__id {
+    font-size: 13px;
+  }
+
+  .details__title--id {
+    margin-right: 0;
+  }
+
+  .details__svg {
+    width: 23px;
+    height: 23px;
+    margin: 0 7px;
+  }
+
+  .details__icons {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .details__icons--box h2 {
+    font-size: 13px;
+  }
+
+  .u-icon-stand {
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 10px;
+  }
+
+  .property__disclaimer {
+    padding: 20px 30px;
+  }
+
+  .property__disclaimer h2 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .details__icons {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* place-items: center; */
+  }
+
+  .u-icon-stand {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,381 @@
+.admin__dashboard {
+  display: flex;
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.admin__dashboard--details {
+  flex: 1;
+  padding: 90px 50px 90px 50px;
+}
+
+.admin__input {
+  padding: 14px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 4px;
+  font-weight: 500;
+  width: 100%;
+}
+
+/* Login and Register Styling */
+.admin-form {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  align-items: center;
+}
+
+.form-signin {
+  width: 50%;
+  text-align: center;
+}
+
+.form-signin h1 {
+  margin-bottom: 20px;
+}
+
+.user__input {
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.icon__container {
+  margin-left: -1.9rem;
+}
+
+.input__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.profile__icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+/* Update Styling */
+.createProductForm {
+  margin: 30px 0px;
+}
+
+.admin__separate--flex {
+  display: flex;
+  align-items: center;
+}
+
+.admin__input {
+  padding: 14px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 4px;
+  font-weight: 500;
+  width: 80%;
+  /* background-color: rgb(201, 198, 198); */
+  /* background: #d4d3d3; */
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.admin__icon--container {
+  margin-left: -2.3rem;
+}
+
+.admin__input--wrapper {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.admin__input--container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  flex: 1;
+}
+
+.admin__update--icon,
+.admin__icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+#createProductFormFile > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  height: 5vh;
+  border: none;
+  border-radius: 5;
+  margin: 10px 0;
+  transition: all 0.5s;
+  padding: 0 10px;
+  color: #222;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: #f8f8f8;
+}
+
+#createProductFormFile > input::file-selector-button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+#createProductBtn {
+  border: none;
+  width: 100%;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #138351;
+  margin: 30px 0;
+  text-align: center;
+}
+
+#createProductBtn:hover {
+  background-color: #006637;
+}
+
+.admin__separate {
+  margin-top: 30px;
+  flex: 0.6;
+}
+
+.admin__textarea {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px 18px;
+  border-radius: 7px;
+  font-weight: 500;
+  resize: none;
+}
+
+.admin__button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Product List Styling */
+.admin__list--container {
+  width: 100%;
+  /* background-color: #f8f8f8; */
+  padding: 90px 0;
+  overflow-x: scroll;
+  margin: 0 50px;
+}
+
+.productListHeading {
+  padding: 0.5vmax;
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+
+.productListTable div {
+  /* color: rgba(0, 0, 0, 0.678); */
+  /* color: #aaa; */
+  color: #222;
+}
+
+.MuiDataGrid-cell {
+  overflow-x: scroll;
+}
+
+.productListTable div {
+  color: #222;
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 600 !important;
+  font-size: 15px;
+  font-family: "aeonikregular", Arial, Helvetica, sans-serif !important;
+}
+
+.MuiDataGrid-cell--textLeft,
+.MuiDataGrid-cell--textRight {
+  font-weight: 500 !important;
+  font-family: "aeonikregular", Arial, Helvetica, sans-serif !important;
+  font-size: 13px !important;
+}
+
+.productListTable a,
+.productListTable button {
+  /* color: rgba(0, 0, 0, 0.527); */
+  color: #222;
+  transition: all 0.5s;
+}
+
+.productListTable button {
+  padding: 0 !important;
+  width: fit-content !important;
+}
+
+.MuiDataGrid-columnHeader div {
+  font-weight: 600;
+  font-family: inherit;
+}
+
+/* Update Property */
+.update__property {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.create__property--form {
+  width: 60%;
+}
+
+.btn-width {
+  width: 30%;
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #138351;
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+  .admin__dashboard--details {
+    flex: 1;
+    padding: 30px 20px;
+    overflow-x: scroll;
+  }
+
+  .dashboard__box--summary {
+    display: block;
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  .dashboard--box {
+    padding: 10px;
+    margin: 0 20px 20px 20px;
+    width: 250px;
+  }
+
+  /* Login and Register */
+  .user__input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* admin Dashboard Styling */
+  .admin__dashboard {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .admin__input {
+    padding: 14px;
+    font-size: 13px;
+    width: 90%;
+  }
+
+  .admin__icon--container {
+    margin-left: -2.3rem;
+  }
+
+  .admin__input--wrapper {
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .admin__input--container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    flex: 1;
+  }
+
+  .admin__update--icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  #createProductFormFile > input::file-selector-button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  #createProductBtn {
+    padding: 10px;
+    font-size: 13px;
+    width: 100px;
+  }
+
+  .admin__textarea {
+    font-size: 13px;
+    padding: 20px 18px;
+    border-radius: 5px;
+  }
+
+  /* Product List Styling */
+  .admin__list--container {
+    width: 100%;
+    padding: 90px 0;
+    overflow-x: scroll;
+    margin: 0 10px;
+  }
+
+  .productListTable div {
+    color: rgba(0, 0, 0, 0.678);
+  }
+
+  .MuiDataGrid-cell {
+    overflow-x: scroll;
+  }
+
+  .MuiDataGrid-columnHeaderTitle {
+    font-weight: 600 !important;
+    font-size: 13px;
+  }
+
+  .MuiDataGrid-cell--textLeft,
+  .MuiDataGrid-cell--textRight {
+    font-size: 11px !important;
+  }
+
+  .productListTable a,
+  .productListTable button {
+    transition: all 0.5s;
+    color: #aaa;
+  }
+
+  .create__property--form {
+    width: 80%;
+  }
+}
