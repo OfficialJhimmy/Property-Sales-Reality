@@ -22,7 +22,7 @@ const HelpingPeople = () => {
           <img src={Image6} alt="building" />
         </div>
 
-        <div data-aos="fade-left" className="info">
+        <div className="info">
           <p>
             Search and find your dream house at affordable prices, but with the
             best quality. Only available at Property Sales Reality!
