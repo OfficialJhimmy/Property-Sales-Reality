@@ -72,7 +72,7 @@ function PropertyDetails() {
                         <IoIosBed className="details__svg" />
                         <p>{property.bedroom}</p>
                       </div>
-                      <div className="details__icons--box u-icon-stand">
+                      <div className="details__icons--box">
                         <h2 className="heading-secondary">Bathroom:</h2>
                         <FaShower className="details__svg" />
                         <p>{property.bathroom}</p>

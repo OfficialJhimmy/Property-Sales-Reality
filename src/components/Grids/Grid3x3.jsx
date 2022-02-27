@@ -13,7 +13,7 @@ const Grid3x3 = () => {
   return (
     <>
       <div className="parent">
-        <div data-aos="flip-up" className="parent__children">
+        <div data-aos="zoom-in" className="parent__children">
           <div className="parent__children--icon">
             <img src={Shield} alt="Our Core Values" className="grid--icon" />
           </div>
@@ -26,7 +26,7 @@ const Grid3x3 = () => {
             </p>
           </div>
         </div>
-        <div data-aos="flip-up" className="parent__children">
+        <div data-aos="zoom-in" className="parent__children">
           <div className="parent__children--icon">
             <img src={Clock} alt="Our Core Values" className="grid--icon" />
           </div>
@@ -39,7 +39,7 @@ const Grid3x3 = () => {
             </p>
           </div>
         </div>
-        <div data-aos="flip-up" className="parent__children">
+        <div data-aos="zoom-in" className="parent__children">
           <div className="parent__children--icon">
             <img src={Lock} alt="Our Core Values" className="grid--icon" />
           </div>
