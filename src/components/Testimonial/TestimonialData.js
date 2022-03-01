@@ -1,8 +1,8 @@
-import Profile1 from "../../assets/images/15.jpg";
-import Profile2 from "../../assets/images/person_1.jpg";
-import Profile3 from "../../assets/images/person_2.jpg";
-import Profile4 from "../../assets/images/16.jpg";
-import Profile5 from "../../assets/images/person_3.jpg";
+import Profile1 from "../../assets/images/15.webp";
+import Profile2 from "../../assets/images/person_1.webp";
+import Profile3 from "../../assets/images/person_2.webp";
+import Profile4 from "../../assets/images/16.webp";
+import Profile5 from "../../assets/images/user-info_1.webp";
 
 export const SliderData = [
   {

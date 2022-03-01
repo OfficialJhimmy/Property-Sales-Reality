@@ -1,10 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-// import image1 from "../../assets/images/banner-1.jpg";
-// import image2 from "../../assets/images/banner-55.jpg";
-import image3 from "../../assets/images/bg-banner6.jpg";
-import image2 from "../../assets/images/bg-banner5.jpg";
-import image1 from "../../assets/images/bg-banner4.jpg";
+import image3 from "../../assets/images/bg-banner6.webp";
+import image2 from "../../assets/images/bg-banner5.webp";
+import image1 from "../../assets/images/bg-banner4.webp";
 
 function BannerSlider() {
   const settings = {

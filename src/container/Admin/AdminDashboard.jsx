@@ -19,9 +19,8 @@ const AdminDashboard = () => {
         <CustomLoader loading={loading} />
       ) : (
         <>
+          <MetaTag title="Dashboard - Admin Panel" />
           <div className="admin__dashboard">
-            <MetaTag title="Dashboard - Admin Panel" />
-
             <Sidebar />
 
             <div className="admin__dashboard--details">

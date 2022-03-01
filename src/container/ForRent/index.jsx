@@ -83,38 +83,34 @@ const ForRent = () => {
   };
   return (
     <>
-      {loading ? (
-        <CustomLoader />
-      ) : (
-        <>
-          <MetaTag title="Available Properties For Rent" />
-          <Navbar />
-          <section>
-            <div className="section-pages">
-              <div className="property__card--container">
-                {forRent &&
-                  forRent.map((property) => (
-                    <PropertyCard property={property} key={property.title} />
-                  ))}
-              </div>
-              {loading && <CustomLoader loading={loading} />}
-              <div className="pagination__wrapper">
-                <div className="buttons-fetch">
-                  {!loading && !isEmpty && (
-                    <button onClick={fetchMore} className="btn-pagination">
-                      Next
-                    </button>
-                  )}
-                  {/* {isEmpty && (
+      <>
+        <MetaTag title="Available Properties For Rent" />
+        <Navbar />
+        <section>
+          <div className="section-pages">
+            <div className="property__card--container">
+              {forRent &&
+                forRent.map((property) => (
+                  <PropertyCard property={property} key={property.title} />
+                ))}
+            </div>
+            {loading && <CustomLoader loading={loading} />}
+            <div className="pagination__wrapper">
+              <div className="buttons-fetch">
+                {!loading && !isEmpty && (
+                  <button onClick={fetchMore} className="btn-pagination">
+                    Next
+                  </button>
+                )}
+                {/* {isEmpty && (
                     <h2 className="heading-primary">End of the page 😢</h2>
                   )} */}
-                </div>
               </div>
             </div>
-          </section>
-          <Footer />
-        </>
-      )}
+          </div>
+        </section>
+        <Footer />
+      </>
     </>
   );
 };

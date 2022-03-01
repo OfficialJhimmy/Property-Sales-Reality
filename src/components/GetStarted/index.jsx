@@ -23,10 +23,10 @@ const GetStarted = () => {
       </div>
 
       <div data-aos="fade-up" className="section_2_slogan">
-        <h1>
+        <h2>
           Whether You're Buying, Selling Or Renting, We Can Help You Move
           Forward
-        </h1>
+        </h2>
       </div>
 
       <div

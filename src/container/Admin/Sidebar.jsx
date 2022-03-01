@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {
   ProSidebar,
   SidebarHeader,
-  //   SidebarFooter,
   SidebarContent,
   Menu,
   MenuItem,
@@ -13,7 +12,6 @@ import "react-pro-sidebar/dist/css/styles.css";
 import { ImPriceTags } from "react-icons/im";
 import { BiExit } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
-// import { useAlert } from "react-alert";
 import { logoutInitiate } from "../../features/action";
 import { useDispatch } from "react-redux";
 import { MdOutlineDashboard } from "react-icons/md";
@@ -26,7 +24,6 @@ import { GiAbstract050 } from "react-icons/gi";
 import "./Sidebar.css";
 function Sidebar() {
   const dispatch = useDispatch();
-  //   const alert = useAlert();
   const navigate = useNavigate();
   const [menuCollapse, setMenuCollapse] = useState(false);
   const menuIconClick = () => {
@@ -74,9 +71,6 @@ function Sidebar() {
               </MenuItem>
             </Menu>
           </SidebarContent>
-          {/* <SidebarFooter>
-           
-          </SidebarFooter> */}
         </ProSidebar>
       </div>
     </>

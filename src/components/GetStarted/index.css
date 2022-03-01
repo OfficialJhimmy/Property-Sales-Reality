@@ -19,7 +19,7 @@
   grid-column: 3/4;
   grid-row: 1/2;
 }
-.section_2_slogan h1 {
+.section_2_slogan h2 {
   color: var(--dark-green);
   font-size: 3rem;
   width: 80%;
@@ -61,7 +61,7 @@
     height: 650px;
   }
 
-  .section_2_slogan h1 {
+  .section_2_slogan h2 {
     font-size: 2.5rem;
     width: 90%;
   }
@@ -76,7 +76,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .section_2_slogan h1 {
+  .section_2_slogan h2 {
     font-size: 2.2rem;
     width: 95%;
   }
@@ -94,7 +94,7 @@
     text-align: start;
   }
 
-  .section_2_slogan h1 {
+  .section_2_slogan h2 {
     margin-top: 1rem;
     margin-bottom: 0.8rem;
     width: 100%;

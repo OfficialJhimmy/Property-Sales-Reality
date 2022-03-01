@@ -62,10 +62,25 @@
   margin: 40px 0;
 }
 
+/* Leaflet Styling */
+.leaflet-container {
+  width: 75vw;
+  height: 75vh;
+  z-index: 10;
+}
+
+.wrapper {
+  padding: 50px 120px;
+}
+
 @media screen and (max-width: 680px) {
   .propertydetails__top,
   .details__title {
     display: block;
+  }
+
+  .wrapper {
+    padding: 10px 20px;
   }
 
   .propertydetails__bottom,

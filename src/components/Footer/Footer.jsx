@@ -25,15 +25,11 @@ const Footer = () => {
           </li>
           <li>
             <div className="socials">
-              <Link to="/">
-                <AiOutlineInstagram className="socials__icon" />
-              </Link>
-              <Link to="/">
-                <AiOutlineFacebook className="socials__icon" />
-              </Link>
-              <Link to="/">
-                <AiOutlineTwitter className="socials__icon" />
-              </Link>
+              <AiOutlineInstagram className="socials__icon" />
+
+              <AiOutlineFacebook className="socials__icon" />
+
+              <AiOutlineTwitter className="socials__icon" />
             </div>
           </li>
         </ul>
@@ -82,7 +78,7 @@ const Footer = () => {
                 placeholder="Email Address"
                 className="input__sub"
               />
-              <button>
+              <button aria-label="Submit">
                 <BsArrowRight />
               </button>
             </div>

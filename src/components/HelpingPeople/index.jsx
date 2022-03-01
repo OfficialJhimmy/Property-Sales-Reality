@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./index.css";
-import Image6 from "../../assets/images/bg-banner6.jpg";
+import Image6 from "../../assets/images/bg-banner6.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

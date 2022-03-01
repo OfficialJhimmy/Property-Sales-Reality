@@ -48,9 +48,8 @@ const EditProperty = () => {
         <CustomLoader loading={loading} />
       ) : (
         <>
+          <MetaTag title="Dashboard - Edit a Property" />
           <div className="admin__dashboard">
-            <MetaTag title="Dashboard - Edit a Property" />
-
             <Sidebar />
 
             <div className="admin__dashboard--details">

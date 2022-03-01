@@ -37,6 +37,7 @@ export const ScrollFromBottom = () => {
           className={
             isVisible ? "button-opacity scroll__btn" : "button-normal "
           }
+          aria-label="Scroll to the Top"
         >
           <BiArrowFromBottom className="scroll__btn--icon" aria-hidden="true" />
         </button>

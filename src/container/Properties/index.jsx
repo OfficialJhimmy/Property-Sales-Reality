@@ -1,6 +1,5 @@
 import {
   collection,
-  doc,
   getDocs,
   query,
   orderBy,
@@ -78,36 +77,32 @@ const Properties = () => {
 
   return (
     <>
-      {loading ? (
-        <CustomLoader loading={loading} />
-      ) : (
-        <>
-          <MetaTag title="Look Through our Catalogue for new and Luxurious Properties" />
-          <Navbar />
-          <section>
-            <div className="section-pages">
-              <div className="property__card--container">
-                {properties &&
-                  properties.map((property) => (
-                    <PropertyCard property={property} key={property.title} />
-                  ))}
-              </div>
-              {loading && <CustomLoader loading={loading} />}
-              <div className="pagination__wrapper">
-                <div className="buttons-fetch">
-                  {!loading && !isEmpty && (
-                    <button onClick={fetchMore} className="btn-pagination">
-                      Next
-                    </button>
-                  )}
-                </div>
+      <>
+        <MetaTag title="Look Through our Catalogue for new and Luxurious Properties" />
+        <Navbar />
+        <section>
+          <div className="section-pages">
+            <div className="property__card--container">
+              {properties &&
+                properties.map((property) => (
+                  <PropertyCard property={property} key={property.title} />
+                ))}
+            </div>
+            {loading && <CustomLoader loading={loading} />}
+            <div className="pagination__wrapper">
+              <div className="buttons-fetch">
+                {!loading && !isEmpty && (
+                  <button onClick={fetchMore} className="btn-pagination">
+                    Next
+                  </button>
+                )}
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <Footer />
-        </>
-      )}
+        <Footer />
+      </>
     </>
   );
 };
