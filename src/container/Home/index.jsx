@@ -14,6 +14,7 @@ import GetStarted from "../../components/GetStarted/index";
 import HelpingPeople from "../../components/HelpingPeople/index";
 import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Navigation/Navbar";
+import "../Properties/index.css";
 
 const Home = () => {
   const [forSale, setForSale] = useState([]);

@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 const GetStarted = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000, easing: "ease-in-out-sine", once: true });
   }, []);
   return (
     <div className="section_2">
